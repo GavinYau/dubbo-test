@@ -3,7 +3,6 @@ package com.gavin.dubbo.service.service;
 import com.gavin.dubbo.api.service.UserService;
 import com.gavin.dubbo.model.pojo.User;
 import org.apache.dubbo.config.annotation.Service;
-import org.springframework.beans.factory.annotation.Value;
 
 import java.util.List;
 

@@ -1,12 +1,12 @@
 dubbo:
   application:
-    name: dubbo-test-provider
+    name: dubbo-test-service
     owner: GavinYau
   registry:
-    address: zookeeper://127.0.0.1:2181 # \u6CE8\u518C\u4E2D\u5FC3\u5730\u5740
+    address: nacos://139.196.101.123:8848/
   metadata-report:
-    address: zookeeper://127.0.0.1:2181 # dubbo-admin\u9700\u8981\u8FD9\u4E2A\u914D\u7F6E\u4E0A\u62A5meta\u4FE1\u606F
-  protocol:  #\u534F\u8BAE\u914D\u7F6E\uFF0C\u7528\u4E8E\u914D\u7F6E\u63D0\u4F9B\u670D\u52A1\u7684\u534F\u8BAE\u4FE1\u606F\uFF0C\u534F\u8BAE\u7531\u63D0\u4F9B\u65B9\u6307\u5B9A\uFF0C\u6D88\u8D39\u65B9\u88AB\u52A8\u63A5\u53D7\u3002
+    address: nacos://139.196.101.123:2181
+  protocol:
     name: dubbo
-    port: -1 # \u968F\u673A\u7AEF\u53E3\u53F7,\u542F\u52A8\u591A\u4E2Aservice
+    port: -1
   version: 1.0.0
